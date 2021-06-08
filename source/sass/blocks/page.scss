@@ -1,0 +1,22 @@
+.page {
+  height: 100%;
+  font-size: 16px;
+  color: $text-color;
+}
+
+.page-body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  // overflow-wrap: break-word;
+  // word-wrap: break-word;
+  font-family:  "Roboto" ,"Arial", sans-serif;
+  font-weight: normal;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  background-color: $primary-color;
+}
+
+// .page-main {
+//   overflow: hidden;
+// }
