@@ -10,17 +10,19 @@
   <link rel="manifest" href="manifest.webmanifest"> -->
   <link href="css/style.min.css" rel="stylesheet">
   <title>Landing Page</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 
 <body class="page-body">
   <header class="header">
     <div class="container">
       <div class="header__wrapper">
-        <a href="#" class="header__logo">
-          <img src="img/logo.png" alt="Логотип">
+        <a class="header__logo">
+          <img src="img/logo.png" alt="Логотип" height="40" width="100">
         </a>
-        <button class="header__burger" aria-label="Кнопка меню">
-         <span></span>
+        <button class="header__burger" aria-label="Menu button">
+          <span></span>
         </button>
         <nav class="header__nav-list">
           <ul class="menu-list list-reset">
@@ -28,22 +30,22 @@
               <a class="menu__link menu__link--current">Home</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#">Features</a>
+              <a href="" class="menu__link" href="#">Features</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#"> Portfolio</a>
+              <a href="" class="menu__link" href="#"> Portfolio</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#">Skills</a>
+              <a href="" class="menu__link" href="#">Skills</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#">Blog</a>
+              <a href="" class="menu__link" href="#">Blog</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#">Clients</a>
+              <a href="" class="menu__link" href="#">Clients</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#">Contacts</a>
+              <a href="" class="menu__link" href="#">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -54,11 +56,157 @@
     <section class="banner">
       <div class="container">
         <div class="banner__wrapper">
-          <h1 class="banner__title">Smart Moves <span class="banner__subtitle"> of <span class="banner__red">Successful</span> Business</span></h1>
+          <h1 class="banner__title">Smart Moves <span class="banner__subtitle"> of <span
+                class="banner__red">Successful</span> Business</span></h1>
           <p class="banner__text">Claritas est etiam processus dynamicus, qui sequitur mutationem</p>
           <button class="button banner__button">Buy This Now</button>
           <button class="button banner__button banner__button--last">Live Preview</button>
         </div>
+      </div>
+    </section>
+    <section class="advantages">
+      <div class="container">
+        <h1 class="advantages__title visually-hidden">Advantages</h1>
+        <ul class="advantages__list list-reset">
+          <li class="advantages__item">
+            <div class="advantages__image">
+              <svg class="advantages__icon advantages__icon-leaf" width="29" height="40">
+                <use xlink:href="img/sprite.svg#leaf"></use>
+              </svg>
+            </div>
+            <h2 class="advantages__list-title">Clean Design</h2>
+            <p class="advantages__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed di</p>
+          </li>
+          <li class="advantages__item">
+            <div class="advantages__image">
+              <svg class="advantages__icon advantages__icon-leaf" width="42" height="40">
+                <use xlink:href="img/sprite.svg#badge"></use>
+              </svg>
+            </div>
+            <h2 class="advantages__list-title">Branding</h2>
+            <p class="advantages__text">Duis autem vel eum iriure dolor in hendrerit in vulputate velit</p>
+          </li>
+          <li class="advantages__item">
+            <div class="advantages__image">
+              <svg class="advantages__icon advantages__icon-leaf" width="25" height="41">
+                <use xlink:href="img/sprite.svg#smartphone"></use>
+              </svg>
+            </div>
+            <h2 class="advantages__list-title">Responsive</h2>
+            <p class="advantages__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed di</p>
+          </li>
+          <li class="advantages__item">
+            <div class="advantages__image">
+              <svg class="advantages__icon advantages__icon-leaf" width="41" height="40">
+                <use xlink:href="img/sprite.svg#settings-work-tool"></use>
+              </svg>
+            </div>
+            <h2 class="advantages__list-title">Development</h2>
+            <p class="advantages__text">Duis autem vel eum iriure dolor in hendrerit in vulputate velit</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="works">
+      <div class="container">
+        <h1 class="works__title visually-hidden">Our works</h1>
+        <ul class="works__list list-reset">
+          <li class="works__item works__item--three">
+            <h2 class="works__item-title">See Our Recent Work</h2>
+            <p class="works__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+              euismod tincidunt ut laoreet. Claritas est etiam processus dynamicus.</p>
+          </li>
+          <li class="works__item works__item--six">
+            <div class="works__info">
+              <h3 class="works__name">Claritas Est Processus</h3>
+              <p class="works__description">Graphic Designer, Photoshop</p>
+            </div>
+            <div class="works__buttons">
+              <button aria-label="Zoom of works" class="works__zoom">
+                <svg class="works__zoom-icon" width="15" height="15">
+                  <use xlink:href="img/sprite.svg#search"></use>
+                </svg>
+              </button>
+              <a aria-label="Look at works" href="#" class="works__link">
+                <svg class="works__link-icon" width="14" height="15">
+                  <use xlink:href="img/sprite.svg#link"></use>
+                </svg>
+              </a>
+            </div>
+          </li>
+          <li class="works__item works__item--three">
+            <div class="works__info">
+              <h3 class="works__name">Claritas Est Processus</h3>
+              <p class="works__description">Graphic Designer, Photoshop</p>
+            </div>
+            <div class="works__buttons">
+              <button aria-label="Zoom of works" class="works__zoom">
+                <svg class="works__zoom-icon" width="15" height="15">
+                  <use xlink:href="img/sprite.svg#search"></use>
+                </svg>
+              </button>
+              <a aria-label="Look at works" href="#" class="works__link">
+                <svg class="works__link-icon" width="14" height="15">
+                  <use xlink:href="img/sprite.svg#link"></use>
+                </svg>
+              </a>
+            </div>
+          </li>
+          <li class="works__item works__item--three">
+            <div class="works__info">
+              <h3 class="works__name">Claritas Est Processus</h3>
+              <p class="works__description">Graphic Designer, Photoshop</p>
+            </div>
+            <div class="works__buttons">
+              <button aria-label="Zoom of works" class="works__zoom">
+                <svg class="works__zoom-icon" width="15" height="15">
+                  <use xlink:href="img/sprite.svg#search"></use>
+                </svg>
+              </button>
+              <a aria-label="Look at works" href="#" class="works__link">
+                <svg class="works__link-icon" width="14" height="15">
+                  <use xlink:href="img/sprite.svg#link"></use>
+                </svg>
+              </a>
+            </div>
+          </li>
+          <li class="works__item works__item--five">
+            <div class="works__info">
+              <h3 class="works__name">Claritas Est Processus</h3>
+              <p class="works__description">Graphic Designer, Photoshop</p>
+            </div>
+            <div class="works__buttons">
+              <button aria-label="Zoom of works" class="works__zoom">
+                <svg class="works__zoom-icon" width="15" height="15">
+                  <use xlink:href="img/sprite.svg#search"></use>
+                </svg>
+              </button>
+              <a aria-label="Look at works" href="#" class="works__link">
+                <svg class="works__link-icon" width="14" height="15">
+                  <use xlink:href="img/sprite.svg#link"></use>
+                </svg>
+              </a>
+            </div>
+          </li>
+          <li class="works__item works__item--four">
+            <div class="works__info">
+              <h3 class="works__name">Claritas Est Processus</h3>
+              <p class="works__description">Graphic Designer, Photoshop</p>
+            </div>
+            <div class="works__buttons">
+              <button aria-label="Zoom in" class="works__zoom">
+                <svg class="works__zoom-icon" width="15" height="15">
+                  <use xlink:href="img/sprite.svg#search"></use>
+                </svg>
+              </button>
+              <a aria-label="Take a look at works" href="#" class="works__link">
+                <svg class="works__link-icon" width="14" height="15">
+                  <use xlink:href="img/sprite.svg#link"></use>
+                </svg>
+              </a>
+            </div>
+          </li>
+        </ul>
       </div>
     </section>
   </main>
