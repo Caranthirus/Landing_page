@@ -8,8 +8,6 @@
   min-width: 320px;
   margin: 0;
   padding: 0;
-  // overflow-wrap: break-word;
-  // word-wrap: break-word;
   font-family:  "Roboto" ,"Arial", sans-serif;
   font-weight: normal;
   display: grid;
@@ -17,6 +15,6 @@
   background-color: $primary-color;
 }
 
-// .page-main {
-//   overflow: hidden;
-// }
+.page-main {
+  overflow: hidden;
+}

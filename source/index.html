@@ -8,10 +8,13 @@
   <link rel="icon" href="img/fav.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="image/apple.png">
   <link rel="manifest" href="manifest.webmanifest"> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"> -->
   <link href="css/style.min.css" rel="stylesheet">
   <title>Landing Page</title>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 </head>
 
 <body class="page-body">
@@ -52,7 +55,7 @@
       </div>
     </div>
   </header>
-  <main>
+  <main class="page-main">
     <section class="banner">
       <div class="container">
         <div class="banner__wrapper">
@@ -342,6 +345,37 @@
           </li>
         </ul>
       </div>
+    </section>
+    <section class="clients">
+      <div class="container">
+        <h2 class="clients__title">Our Happy Clients</h2>
+        <p class="clients__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+          tincidunt ut laoreet. Claritas est etiam processus dynamicus.</p>
+        <div class="clients__carousel carousel owl-carousel owl-theme">
+          <div class="carousel__item">
+            <img src="img/client1.png" alt="Клиент 1" width="134" height="85">
+          </div>
+          <div class="carousel__item">
+            <img src="img/client2.png" alt="Клиент 2" width="200" height="77">
+          </div>
+          <div class="carousel__item">
+            <img src="img/client3.png"  alt="Клиент 3" width="88" height="88">
+          </div>
+          <div class="carousel__item">
+            <img src="img/client4.png" alt="Клиент 4" width="142" height="52">
+          </div>
+          <div class="carousel__item">
+            <img src="img/client5.png" alt="Клиент 5" width="79" height="86">
+          </div>
+          <div class="carousel__item">
+            <img src="img/client4.png" alt="Клиент 4" width="142" height="52">
+          </div>
+          <div class="carousel__item">
+            <img src="img/client2.png" alt="Клиент 2" width="200" height="77">
+          </div>
+        </div>
+      </div>
+
     </section>
   </main>
   <script src="js/script.min.js"></script>
