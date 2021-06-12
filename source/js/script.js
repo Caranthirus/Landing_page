@@ -37,7 +37,7 @@ let animate = true;
 
 $(window).scroll(function () {
 
-  if($(".skills").offset().top <= $(window).scrollTop() + 150) {
+  if($(".skills").offset().top <= $(window).scrollTop() + 300) {
     if(animate) {
       moveProgressBar(".progress__element", ".progress__line", ".progress__tooltip");
     }

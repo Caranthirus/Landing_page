@@ -8,13 +8,11 @@
   <link rel="icon" href="img/fav.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="image/apple.png">
   <link rel="manifest" href="manifest.webmanifest"> -->
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"> -->
   <link href="css/style.min.css" rel="stylesheet">
   <title>Landing Page</title>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 </head>
 
 <body class="page-body">
@@ -359,7 +357,7 @@
             <img src="img/client2.png" alt="Клиент 2" width="200" height="77">
           </div>
           <div class="carousel__item">
-            <img src="img/client3.png"  alt="Клиент 3" width="88" height="88">
+            <img src="img/client3.png" alt="Клиент 3" width="88" height="88">
           </div>
           <div class="carousel__item">
             <img src="img/client4.png" alt="Клиент 4" width="142" height="52">
@@ -375,9 +373,63 @@
           </div>
         </div>
       </div>
-
+    </section>
+    <section class="contacts">
+      <div class="container">
+        <h2 class="contacts__title">Contacts</h2>
+        <div class="contacts__wrap">
+          <div class="contacts__left">
+            <form method="get" action="https://echo.htmlacademy.ru" class="contacts__form form">
+              <div class="form__input">
+                <label  class="visually-hidden" for="form-name">Name</label>
+                <input id="form-name" type="text" name="name" placeholder="Name">
+              </div>
+              <div class="form__input">
+                <label class="visually-hidden" for="form-phone">Phone</label>
+                <input id="form-phone" type="tel" name="phone" placeholder="Phone">
+              </div>
+              <div class="form__input">
+                <label class="visually-hidden" for="form-message">Message</label>
+                <textarea name="Message" placeholder="Message" id="form-message"></textarea>
+              </div>
+              <button type="submit" class="form__button">Send</button>
+            </form>
+          </div>
+          <div class="contacts__right">
+            <img src="img/map.png" alt="Площадь восстания" width="567" height="438">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A9f5ce33506003f73d3c7840f4d8f8208e16b039ac405603ea0154e0b7f84794f&amp;source=constructor" width="567" height="438"></iframe>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
+  <footer class="footer">
+    <div class="container">
+      <ul class="menu-list list-reset footer__menu">
+        <li class="menu__item">
+          <a class="menu__link menu__link--current">Home</a>
+        </li>
+        <li class="menu__item">
+          <a href="" class="menu__link" href="#">Features</a>
+        </li>
+        <li class="menu__item">
+          <a href="" class="menu__link" href="#"> Portfolio</a>
+        </li>
+        <li class="menu__item">
+          <a href="" class="menu__link" href="#">Skills</a>
+        </li>
+        <li class="menu__item">
+          <a href="" class="menu__link" href="#">Blog</a>
+        </li>
+        <li class="menu__item">
+          <a href="" class="menu__link" href="#">Clients</a>
+        </li>
+        <li class="menu__item">
+          <a href="" class="menu__link" href="#">Contacts</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
   <script src="js/script.min.js"></script>
 </body>
 
