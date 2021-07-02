@@ -11,7 +11,8 @@
 .advantages__item {
   margin-top: 30px;
 
-  &:hover {
+  &:hover,
+  &:active {
     .advantages__image {
       border-color: $secondary-color;
     }
